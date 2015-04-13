@@ -1,0 +1,4 @@
+%menuGlow {
+  color: $white-glow;
+  @include textShadow(0px, 0px, 20px, $main-shadow);
+}

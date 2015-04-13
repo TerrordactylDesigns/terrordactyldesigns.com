@@ -1,0 +1,26 @@
+// text shadow
+@mixin textShadow($right, $down, $blur, $color) {
+  -moz-text-shadow: $right $down $blur $color;
+  -webkit-text-shadow: $right $down $blur $color;
+  text-shadow: $right $down $blur $color;
+}
+// box shadow
+@mixin boxShadow($right, $down, $blur, $spread, $color) {
+  -moz-box-shadow: $right $down $blur $spread $color;
+  -webkit-box-shadow: $right $down $blur $spread $color;
+  box-shadow: $right $down $blur $spread $color;
+}
+
+@mixin verticalAlign {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin preserve3d {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
