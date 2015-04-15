@@ -1,0 +1,5 @@
+header {
+  background-color: $header-color;
+  padding: 1em;
+  @include clearfix;
+}

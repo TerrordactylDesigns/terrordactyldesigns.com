@@ -34,6 +34,10 @@
   }
 }
 
+.no-padding {
+  padding: 0;
+}
+
 .landing-nav {
   > ul {
     list-style: none;
@@ -67,7 +71,7 @@
 
   a {
     font-family: 'Lucida Grande', Helvetica, sans-serif;
-    font-size: 35px;
+    font-size: $font-landingnav-large;
     color: $lander-link;
     text-decoration: none;
     opacity: 0;
