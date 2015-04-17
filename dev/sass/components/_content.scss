@@ -1,0 +1,22 @@
+.content {
+  background-color: $black-alpha;
+  margin-top: 2em;
+  text-align: center;
+  h2 {
+    color: $lander-link;
+  }
+
+  p {
+    color: $main-gray;
+  }
+
+  a {
+    color: $link-color;
+    &:visited, &:focus {
+      color: $link-color;
+    }
+    &:hover {
+      color: $link-hover;
+    }
+  }
+}

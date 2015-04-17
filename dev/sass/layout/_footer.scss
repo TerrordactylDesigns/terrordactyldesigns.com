@@ -14,5 +14,17 @@ footer {
   height: 50px;
   width: 100%;
   text-align: center;
-  background-color: $footer-color;
+  background-color: $black-alpha;
+  > p {
+    color: $main-gray;
+    a {
+      color: $link-color;
+      &:focus, &:visited {
+        color: $link-color;
+      }
+      &:hover {
+        color: $link-hover;
+      }
+    }
+  }
 }
