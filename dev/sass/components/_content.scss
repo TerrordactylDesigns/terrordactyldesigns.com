@@ -1,13 +1,16 @@
 .content {
   background-color: $black-alpha;
-  margin-top: 2em;
+  margin: 2em 1em 1em;
   text-align: center;
+  border-radius: 10px;
+  overflow-y: auto;
   h2 {
     color: $lander-link;
   }
 
   p {
     color: $main-gray;
+    -webkit-margin-after: 0;
   }
 
   a {

@@ -6,4 +6,8 @@
   background-color: $logo-red;
   border-radius: 5px;
   float:left;
+  > a {
+    height: 100%;
+    display: block;
+  }
 }
