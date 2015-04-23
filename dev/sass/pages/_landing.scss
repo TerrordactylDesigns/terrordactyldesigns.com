@@ -86,8 +86,7 @@
     }
   }
 
-  // iphone 4, etc
-  @media (max-height: 590px) {
+  @include iphone4 {
     li:nth-child(1) {
       top: 1em;
     }
@@ -102,8 +101,7 @@
     }
   }
 
-  // Tablets 
-  @media only screen and (min-width : 768px) {
+  @include tablet {
     li:nth-child(1) {
       top: 16%;
     }
@@ -117,6 +115,21 @@
     }
     li:nth-child(4) {
       bottom: 16%
+    }
+  }
+
+  @include tabletPortrait {
+    li:nth-child(1) {
+      top: 9em;
+    }
+    li:nth-child(2) {
+      top: 15em;
+    }
+    li:nth-child(3) {
+      bottom: 15em;
+    }
+    li:nth-child(4) {
+      bottom: 9em;
     }
   }
 }

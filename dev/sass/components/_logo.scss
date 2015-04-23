@@ -6,8 +6,12 @@
   background-color: $logo-red;
   border-radius: 5px;
   float:left;
+  margin-top: .3em;
   > a {
     height: 100%;
     display: block;
+  }
+  @include tablet {
+    margin-top: 0;
   }
 }

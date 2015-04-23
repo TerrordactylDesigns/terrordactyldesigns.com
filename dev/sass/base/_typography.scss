@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Galindo";
+  src: url("../fonts/Galindo/galindo-regular-webfont.eot");
+  src: url("../fonts/Galindo/galindo-regular-webfont.svg");
+  src: url("../fonts/Galindo/galindo-regular-webfont.ttf");
+  src: url("../fonts/Galindo/galindo-regular-webfont.woff");
+}
+
+a {
+  font-size: $font-large;
+}
+
 p {
   font-size: $font-large;
   line-height: 1.4em;
@@ -5,4 +17,12 @@ p {
 
 footer > p {
   font-size: $font-small;
+}
+
+footer a {
+  font-size: $font-small;
+}
+
+h1, h2, h3 {
+  font-family: 'Galindo', 'Lucida Grande', sans-serif;
 }

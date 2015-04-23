@@ -2,3 +2,21 @@
   color: $white-glow;
   @include textShadow(0px, 0px, 20px, $main-shadow);
 }
+
+@mixin iphone4 {
+  @media #{$iphone4} {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media #{$tablet} {
+    @content;
+  }
+}
+
+@mixin tabletPortrait {
+  @media #{$tabletPortrait} {
+    @content;
+  }
+}
