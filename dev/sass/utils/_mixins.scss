@@ -36,3 +36,28 @@
   }
   *zoom: 1;
 }
+
+// media queries
+@mixin iphone4 {
+  @media #{$iphone4} {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media #{$tablet} {
+    @content;
+  }
+}
+
+@mixin tabletPortrait {
+  @media #{$tabletPortrait} {
+    @content;
+  }
+}
+
+@mixin web-laptop {
+  @media #{$web-laptop} {
+    @content;
+  }
+}
