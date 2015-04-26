@@ -5,3 +5,4 @@ dev/bower_components
 .sass-cache
 src
 dev/css
+config.json
