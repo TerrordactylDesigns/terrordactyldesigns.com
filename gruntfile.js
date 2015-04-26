@@ -95,26 +95,26 @@ var mountFolder = function (connect, dir) {
       ]
     },
 
-    concat: {
-      options: {
-        separator: ';'
-      },
-      dist: {
-        src:['js/**/*.js'],
-        dest: 'tmp/<%= pkg.name %>.js'
-      }
-    },
+    // concat: {
+    //   options: {
+    //     separator: ';'
+    //   },
+    //   dist: {
+    //     src:['js/**/*.js'],
+    //     dest: 'tmp/<%= pkg.name %>.js'
+    //   }
+    // },
 
-    uglify: {
-      options: {
-        banner: '/*! <%= pkg.name %> - <%= pkg.author %> - <%= grunt.template.today("dd-mm-yyyy") %>*/\n'
-      },
-      dist: {
-        files: {
-          'dist/js/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
-        }
-      }
-    },
+    // uglify: {
+    //   options: {
+    //     banner: '/*! <%= pkg.name %> - <%= pkg.author %> - <%= grunt.template.today("dd-mm-yyyy") %>*/\n'
+    //   },
+    //   dist: {
+    //     files: {
+    //       'dist/js/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
+    //     }
+    //   }
+    // },
 
     compass: {
       options: {
@@ -149,9 +149,6 @@ var mountFolder = function (connect, dir) {
       },
       dist: {
         files: {
-          'dist/css/home.css': [
-            'dev/css/home.css'
-          ],
           'dist/css/<%= pkg.name %>.min.css': [
             'dev/css/main.css'
           ]
@@ -243,7 +240,9 @@ var mountFolder = function (connect, dir) {
     },
 
     useminPrepare: {
-      html: 'dev/photography.html',
+      html: {
+        src: ['dev/index.html']
+      },
       options: {
         dest: 'dist/'
       }
@@ -258,7 +257,7 @@ var mountFolder = function (connect, dir) {
 
     clean: {
       tmp: {
-        src: ['tmp/']
+        src: ['tmp/', '.tmp/']
       },
       backup: {
         src: ['dist/backup']

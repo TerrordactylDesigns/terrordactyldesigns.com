@@ -6,3 +6,4 @@ dev/bower_components
 src
 dev/css
 config.json
+dist/
