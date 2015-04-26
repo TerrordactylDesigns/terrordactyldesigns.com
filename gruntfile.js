@@ -116,18 +116,18 @@ var mountFolder = function (connect, dir) {
     //   }
     // },
 
-    compass: {
-      options: {
-        sassDir: 'dev/sass',
-        cssDir: 'css'
-      },
-      dist: {},
-      server: {
-        options: {
-          debugInfo: true
-        }
-      }
-    },
+    // compass: {
+    //   options: {
+    //     sassDir: 'dev/sass',
+    //     cssDir: 'css'
+    //   },
+    //   dist: {},
+    //   server: {
+    //     options: {
+    //       debugInfo: true
+    //     }
+    //   }
+    // },
 
     sass: {
       dist: {},
@@ -156,6 +156,20 @@ var mountFolder = function (connect, dir) {
       }
     },
 
+    imagemin: {
+      dist: {
+        options: {
+          optimizationLevel: 5
+        },
+        files: [{
+          expand: true,
+          cwd: 'dev/img',
+          src: ['*.{png,jpg,jpeg,gif}'],
+          dest: 'dist/img/'
+        }]
+      }
+    },
+
     copy: {
       main: {
         files: [
@@ -174,15 +188,15 @@ var mountFolder = function (connect, dir) {
             src: [
               '**'
             ]
-          },
-          {
-            expand: true,
-            cwd: 'dev/img/',
-            dest: 'dist/img',
-            src: [
-              '**'
-            ]
-           }//,
+          }// ,
+          // {
+          //   expand: true,
+          //   cwd: 'dev/img/',
+          //   dest: 'dist/img',
+          //   src: [
+          //     '**'
+          //   ]
+          //  }//,
           // {
           //   expand: true,
           //   cwd: 'dev/css/',
@@ -330,6 +344,7 @@ var mountFolder = function (connect, dir) {
     'uglify',
     'sass',
     'cssmin',
+    'imagemin',
     'copy:main',
     'clean:tmp',
     'usemin'
