@@ -170,6 +170,20 @@ var mountFolder = function (connect, dir) {
       }
     },
 
+    htmlmin: {
+      dist: {
+        options: {
+          collapseWhitespace: true
+        },
+        files: [{
+          expand: true,
+          cwd: 'dist/',
+          src: '*.html',
+          dest: 'dist/'
+        }]
+      }
+    },
+
     copy: {
       main: {
         files: [
@@ -178,7 +192,8 @@ var mountFolder = function (connect, dir) {
             cwd: 'dev/',
             dest: 'dist',
             src: [
-              '*.html'
+              '*.html',
+              'favicon.ico'
             ]
           },
           {
@@ -347,7 +362,8 @@ var mountFolder = function (connect, dir) {
     'imagemin',
     'copy:main',
     'clean:tmp',
-    'usemin'
+    'usemin',
+    'htmlmin'
   ]);
 
   grunt.registerTask('live', [
