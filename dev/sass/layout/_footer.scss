@@ -24,7 +24,7 @@ footer {
         color: $link-color;
       }
       &:hover {
-        color: $link-hover;
+        @extend %linkHover;
       }
     }
   }

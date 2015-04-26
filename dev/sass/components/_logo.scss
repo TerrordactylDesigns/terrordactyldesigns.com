@@ -14,4 +14,8 @@
   @include tablet {
     margin-top: 0;
   }
+  &:hover {
+    @include boxShadow(0px, 0px, 20px, 0px, $main-shadow);
+  }
+  @include ease;
 }

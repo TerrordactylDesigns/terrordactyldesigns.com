@@ -1,4 +1,11 @@
 %menuGlow {
   color: $white-glow;
   @include textShadow(0px, 0px, 20px, $main-shadow);
+  @include ease;
+}
+
+%linkHover {
+  color: $link-hover;
+  @include textShadow(0px, 0px, 20px, $main-gray);
+  @include ease;
 }
