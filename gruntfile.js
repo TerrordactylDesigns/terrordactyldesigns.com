@@ -11,7 +11,7 @@ var mountFolder = function (connect, dir) {
     watch: {
 
       all: {
-        files: ['dev/*.html'],
+        files: ['dev/*.html', 'dev/css/*.css'],
         options: {
 
         }

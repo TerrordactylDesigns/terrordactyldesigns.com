@@ -13,9 +13,11 @@ a {
 p {
   font-size: $font-large;
   line-height: 1.4em;
+  margin: 0;
 }
 
 footer > p {
+  margin-top: 1em;
   font-size: $font-small;
 }
 

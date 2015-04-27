@@ -67,3 +67,17 @@
     @content;
   }
 }
+
+@mixin web {
+  @media #{$web} {
+    @content;
+  }
+}
+
+// this is here until i figure out the proper way to use extends...
+// might just make all mixins due to the error i get in media queries
+@mixin linkHover {
+  color: $link-hover;
+  @include textShadow(0px, 0px, 20px, $main-gray);
+  @include ease;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terrordactyl Designs</title>
+  <!-- build:css css/TerrordactylDesigns.com.min.css -->
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <!-- endbuild -->
+</head>
+<body class="background">
+  <header>
+    <h1 class="logo"><a href="index.html">Terrordactyl Designs. Fucking up the internet since 2012.</a></h1>
+    <nav class="header-nav">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programming.html">Programming</a></li>
+        <li><a class="active" href="photography.html">Photography</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="content">
+    <section id="js-viewer"></section>
+
+    <div id="thumb-tray">
+      <div class="thumb street"><a href="viewer.html?img=street"><img src="img/street-thumb.jpg"></a></div>
+      <div class="thumb darkcatprofile"><a href="viewer.html?img=darkcatprofile"><img src="img/darkcatprofile-thumb.jpg"></a></div>
+      <div class="thumb mackeys"><a href="viewer.html?img=mackeys"><img src="img/mackeys-thumb.jpg"></a></div>
+      <div class="thumb bird"><a href="viewer.html?img=bird"><img src="img/bird-thumb.jpg"></a></div>
+      <div class="thumb sloth"><a href="viewer.html?img=sloth"><img src="img/sloth-thumb.jpg"></a></div>
+      <div class="thumb messenger"><a href="viewer.html?img=messenger"><img src="img/messenger-thumb.jpg"></a></div>
+      <div class="thumb canon"><a href="viewer.html?img=canon"><img src="img/canon-thumb.jpg"></a></div>
+      <div class="thumb butterfly"><a href="viewer.html?img=butterfly"><img src="img/butterfly-thumb.jpg"></a></div>
+      <div class="thumb churchinside"><a href="viewer.html?img=churchinside"><img src="img/churchInside-thumb.jpg"></a></div>
+      <div class="thumb taormina"><a href="viewer.html?img=taormina"><img src="img/taormina-thumb.jpg"></a></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>All Content &copy; 2015 <a href="/contact.html">Terrordactyl Designs</a></p>
+  </footer>
+  <!-- build:js js/TerrordactylDesigns.com.min.js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="js/terrordactyl.js"></script>
+  <!--<script src="js/analytics.js"></script>-->
+  <!-- endbuild -->
+  <script type="text/javascript">
+    $(function() {
+      terror.loadPic();
+    });
+  </script>
+</body>
+</html>

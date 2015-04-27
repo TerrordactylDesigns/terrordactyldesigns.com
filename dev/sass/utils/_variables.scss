@@ -9,6 +9,7 @@ $link-hover: #333;
 $black: #000;
 $lander-link: #777;
 $black-alpha: rgba(0,0,0,.4);
+$black-alpha-dark: rgba(0,0,0,.7);
 
 // Font sizes
 $font-normal: 16px;
@@ -21,3 +22,4 @@ $iphone4: "(max-height: 590px) and (min-width: 320px)";
 $tablet: "screen and (min-width : 768px)";
 $tabletPortrait: "screen and (max-height: 970px) and (min-height: 680px) and (max-width: 610px)";
 $web-laptop: "screen and (min-width: 1020px)";
+$web: "screen and (min-width: 1020px) and (min-height: 801px)";

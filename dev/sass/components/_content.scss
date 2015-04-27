@@ -31,4 +31,9 @@
       @extend %linkHover;
     }
   }
+
+  &:hover {
+    @include boxShadow(0px, 0px, 20px, 0px, $black);
+    @include ease;
+  }
 }

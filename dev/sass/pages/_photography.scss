@@ -1,0 +1,120 @@
+#photography {
+
+  section {
+    display: none;
+  }
+
+  //@include web,
+  @include web-laptop {
+    section {
+      display: block;
+      p {
+        padding: 2em;
+        color: $white-glow;
+        background-color: $black-alpha-dark;
+        border-radius: 10px;
+        &:hover {
+          @include boxShadow(0px, 0px, 20px, 0px, $black);
+          @include ease;
+        }
+      }
+
+      > div {
+        padding: 10em 5em 0;
+      }
+
+      a {
+        color: $link-color;
+        &:visited, &:focus {
+          color: $link-color;
+        }
+        &:hover {
+          @include linkHover;
+        }
+      }
+    }
+
+    main {
+      display: none;
+    }
+
+    #one {
+      background: url('../img/street.jpg') 50% 0 no-repeat fixed;
+      min-height: 900px;
+    }
+    #two {
+      background: url('../img/darkcatprofile.jpg') 50% 0 no-repeat fixed;
+      min-height: 900px;
+    }
+    #three {
+      background: url('../img/mackeys.jpg') 50% 0 no-repeat fixed;
+      min-height: 900px;
+    }
+    #four {
+      background: url('../img/bird.jpg') 50% 0 no-repeat fixed;
+      min-height: 900px;
+    }
+    #five {
+      background: url('../img/sloth.jpg') 50% 0 no-repeat fixed;
+      min-height: 900px;
+    }
+    #six {
+      background: url('../img/messenger.jpg') 50% 0 no-repeat fixed;
+      min-height: 900px;
+    }
+    #seven {
+      background: url('../img/canon.jpg') 50% 0 no-repeat fixed;
+      min-height: 900px;
+    }
+    #eight {
+      background: url('../img/butterfly.jpg') 50% 0 no-repeat fixed;
+      min-height: 900px;
+    }
+    #nine {
+      background: url('../img/churchinside.jpg') 50% 0 no-repeat fixed;
+      min-height: 900px;
+    }
+    #ten {
+      background: url('../img/taormina.jpg') 50% 0 no-repeat fixed;
+      min-height: 900px;
+    }
+    
+  }
+}
+
+.thumb {
+  display: inline-block;
+  margin-right: 1em;
+  img {
+    width: 10em;
+    height: 10em;
+    &:hover {
+      @include boxShadow(0px, 0px, 20px, 0px, $white-glow);
+      @include ease;
+    }
+  }
+  
+}
+
+#thumb-tray {
+  width: 80%;
+  margin: 1em auto;
+  background-color: rgba(18, 18, 18, 0.5);
+  border-radius: 15px;
+  padding:1em;
+  text-align: center;
+  &:hover {
+    @include boxShadow(0px, 0px, 20px, 0px, $black);
+    @include ease;
+  }
+}
+
+#viewer {
+  img {
+    width: 100%;
+  }
+}
+
+.active-thumb {
+  @include boxShadow(0px, 0px, 20px, 0px, $white-glow);
+}

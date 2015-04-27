@@ -152,4 +152,21 @@
       bottom: 1%
     }
   }
+
+  @include web {
+    li:nth-child(1) {
+      top: 16%;
+    }
+    li:nth-child(2) {
+      left: 12%;
+      top: 47%
+    }
+    li:nth-child(3) {
+      left: 87%;
+      top: 47%;
+    }
+    li:nth-child(4) {
+      bottom: 16%
+    }
+  }
 }
